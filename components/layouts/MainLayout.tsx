@@ -7,11 +7,9 @@ interface layoutProps {
     title: string
 }
 
+const location = ( typeof window === 'undefined' ? '' : window.location.origin)
 
 export const MainLayout: FC<layoutProps> = ({children,title}) => {
-
-
-  const location = ( typeof window === 'undefined' ? '' : window.location)
 
 
   return (
